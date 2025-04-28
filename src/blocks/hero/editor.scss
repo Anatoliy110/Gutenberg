@@ -1,0 +1,23 @@
+.block-editor-block-list__block.wp-block-custom-hero {
+    .hero {
+      max-width: 1140px; 
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  
+    .col {
+      flex: 1 0 0%;
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  

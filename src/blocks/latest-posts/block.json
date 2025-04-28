@@ -1,0 +1,24 @@
+{
+  "apiVersion": 2,
+  "name": "custom/latest-posts",
+  "title": "Latest Blog Posts",
+  "category": "custom-blocks",
+  "icon": "admin-post",
+  "description": "Display latest blog posts in a grid.",
+  "keywords": ["blog", "posts", "latest"],
+  "textdomain": "custom-gutenberg-blocks",
+  "attributes": {
+    "postsToShow": {
+      "type": "number",
+      "default": 4
+    },
+    "viewMoreUrl": {
+      "type": "string",
+      "default": "/blog"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./index.css",
+  "renderCallback": "custom_render_latest_posts"
+}

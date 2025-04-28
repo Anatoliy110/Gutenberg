@@ -1,0 +1,33 @@
+{
+  "apiVersion": 2,
+  "name": "custom/hero",
+  "title": "Header (Hero)",
+  "category": "custom-blocks",
+  "icon": "admin-site-alt3",
+  "description": "Responsive header with logo, navigation, and search.",
+  "keywords": ["header", "hero", "menu", "search"],
+  "textdomain": "custom-gutenberg-blocks",
+  "attributes": {
+    "logoUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "menuItems": {
+      "type": "array",
+      "default": [
+        { "text": "Home", "url": "#" },
+        { "text": "About Us", "url": "#" },
+        { "text": "Features", "url": "#" },
+        { "text": "Cart", "url": "#" },
+        { "text": "Contact Us", "url": "#" }
+      ]
+    },
+    "searchPlaceholder": {
+      "type": "string",
+      "default": "Search..."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./index.css"
+}

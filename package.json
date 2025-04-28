@@ -1,0 +1,18 @@
+{
+  "name": "custom-gutenberg-blocks",
+  "version": "1.0.0",
+  "description": "Custom Gutenberg blocks plugin",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wordpress/scripts": "^30.15.0",
+    "bootstrap": "^5.3.5",
+    "sass": "^1.87.0"
+  }
+}
