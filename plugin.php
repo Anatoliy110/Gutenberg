@@ -69,7 +69,7 @@ function cgb_enqueue_global_scripts() {
 
     wp_enqueue_script(
         'custom-subscription-form',
-        plugin_dir_url(__FILE__) . 'js/subscription-form.js',
+        plugin_dir_url(__FILE__) . 'src/js/subscription-form.js',
         ['jquery'],
         null,
         true
@@ -96,8 +96,8 @@ function cgb_enqueue_editor_assets() {
 }
 add_action('enqueue_block_editor_assets', 'cgb_enqueue_editor_assets');
 
-if (file_exists(__DIR__ . '/render.php')) {
-    require_once __DIR__ . '/render.php';
+if (file_exists(__DIR__ . 'src/template/render.php')) {
+    require_once __DIR__ . 'src/template/render.php';
 }
 
 add_action('enqueue_block_editor_assets', function() {
